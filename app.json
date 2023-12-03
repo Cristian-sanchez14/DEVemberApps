@@ -31,6 +31,10 @@
         "projectId": "9a9b94a9-80f3-4a4f-af4a-d3f2debcdb16"
       }
     },
-    "owner": "starkiller14"
+    "owner": "starkiller14",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "tsconfigPaths": true
+    }
   }
 }
