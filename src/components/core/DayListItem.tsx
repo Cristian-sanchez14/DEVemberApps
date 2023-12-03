@@ -17,20 +17,20 @@ export default function DayListItem({ day }: DayListItem) {
 
 const styles = StyleSheet.create({
   box: {
-    backgroundColor: '#F9EDE3',
+    backgroundColor: '#122507',
     flex: 1,
-    aspectRatio: 1,
-
+    height: 350,
+    
     borderWidth: StyleSheet.hairlineWidth,
-    borderColor: '#9b4521',
+    borderColor: '#83ce00',
     borderRadius: 20,
 
     justifyContent: 'center',
     alignItems: 'center',
   },
   text: {
-    color: '#9b4521',
-    fontSize: 75,
+    color: '#197009',
+    fontSize: 85,
     fontFamily: 'AmaticBold',
   },
 });

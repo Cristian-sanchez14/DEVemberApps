@@ -42,7 +42,7 @@ export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Stack screenOptions={{}}>
-        <Stack.Screen name="index" options={{ title: 'DEVember' }} />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
       </Stack>
     </GestureHandlerRootView>
   );

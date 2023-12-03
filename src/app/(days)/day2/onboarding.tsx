@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     // alignItems: 'center',
     justifyContent: 'center',
     flex: 1,
-    backgroundColor: '#15141A',
+    backgroundColor: '#122507',
   },
   pageContent: {
     padding: 20,
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     gap: 20,
   },
   button: {
-    backgroundColor: '#302E38',
+    backgroundColor: '#8ca308',
     borderRadius: 50,
     alignItems: 'center',
     flex: 1,
