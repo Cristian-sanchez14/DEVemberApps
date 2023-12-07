@@ -31,7 +31,7 @@ const AnimatedSplashScreen = ({
         ref={animation}
         onAnimationFinish={onAnimationFinish}
         loop={false}
-        autoPlay
+        autoPlay // auto play will display the dynamic logo
         style={{
           width: '80%',
           maxWidth: 400,
