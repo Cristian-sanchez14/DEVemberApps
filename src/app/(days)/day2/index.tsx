@@ -1,7 +1,7 @@
 import { Button } from 'react-native';
 import React from 'react';
 import { Link, Stack } from 'expo-router';
-import MarkdownDisplay from '@components/day3/MarkDownDisplay';
+import MarkdownDisplay from '@/components/day3/MarkDownDisplay';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const description = `
