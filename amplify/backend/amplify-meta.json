@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-devember-dev-115457-authRole",
+      "UnauthRoleArn": "arn:aws:iam::229999919476:role/amplify-devember-dev-115457-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::229999919476:role/amplify-devember-dev-115457-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-devember-dev-115457-deployment",
+      "UnauthRoleName": "amplify-devember-dev-115457-unauthRole",
+      "StackName": "amplify-devember-dev-115457",
+      "StackId": "arn:aws:cloudformation:us-west-2:229999919476:stack/amplify-devember-dev-115457/47696610-9ab2-11ee-8acd-06e70ab2eca9",
+      "AmplifyAppId": "d16l120eyn5e4e"
+    }
+  }
+}

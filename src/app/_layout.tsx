@@ -18,6 +18,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import AnimatedSplashScreen from '@components/day4/AnimationSplashScreen';
 import Animated, { FadeIn } from 'react-native-reanimated';
 
+import BiometricProvider from '@/components/day10/BiometricsProvider';
+
 // SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
@@ -56,12 +58,14 @@ export default function RootLayout() {
   }
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <Animated.View style={{ flex: 1 }} entering={FadeIn}>
-        <Stack screenOptions={{}}>
-          <Stack.Screen name="index" options={{ title: 'DEVember' }} />
-        </Stack>
-      </Animated.View>
-    </GestureHandlerRootView>
+    <BiometricProvider>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <Animated.View style={{ flex: 1 }} entering={FadeIn}>
+          <Stack screenOptions={{}}>
+            <Stack.Screen name="index" options={{ title: 'DEVember' }} />
+          </Stack>
+        </Animated.View>
+      </GestureHandlerRootView>
+    </BiometricProvider>
   );
 }

@@ -32,7 +32,15 @@
       }
     },
     "owner": "starkiller14",
-    "plugins": ["expo-router"],
+    "plugins": [
+      "expo-router", 
+      [
+      "expo-local-authentication",
+      {
+        "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID to unlock Secret Info."
+      }
+    ]],
+    
     "experiments": {
       "tsconfigPaths": true
     }
