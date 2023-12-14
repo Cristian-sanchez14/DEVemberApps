@@ -33,14 +33,18 @@
     },
     "owner": "starkiller14",
     "plugins": [
-      "expo-router", 
+      "expo-router",
       [
-      "expo-local-authentication",
-      {
-        "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID to unlock Secret Info."
-      }
-    ]],
-    
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID to unlock Secret Info.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "$(PRODUCT_NAME) needs access to your Microphone.",
+          "enableCodeScanner": true
+        }
+      ],
+      "react-native-vision-camera"
+    ],
     "experiments": {
       "tsconfigPaths": true
     }
