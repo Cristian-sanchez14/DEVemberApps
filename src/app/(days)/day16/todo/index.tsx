@@ -7,13 +7,15 @@ import {
   Button,
   View,
 } from 'react-native';
-import { useState } from 'react';
 import { Stack } from 'expo-router';
-import NewTaskInput from '@/components/day15/NewTaskInput';
+import NewTaskInput from '@/components/day16/NewTaskInput';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import TaskListItem from '@/components/day15/TaskListItem';
+import TaskListItem from '@/components/day16/TaskListItem';
 import Reanimated, { CurvedTransition } from 'react-native-reanimated';
 import { useHeaderHeight } from '@react-navigation/elements';
+
+import { useState } from 'react';
+import { useTasks } from '@components/day16/TasksContextProvider'
 
 export type Task = {
   title: string;
@@ -49,6 +51,9 @@ const TodoScreen = () => {
   const [tab, setTab] = useState<'All' | 'Todo' | 'Finished'>('All');
 
   const headerHeight = useHeaderHeight();
+  
+  const values = useTasks();
+  console.log("Values: ", values)
 
   const filteredTasks = tasks.filter((task) => {
     if (task.isFinished && tab === 'Todo') {
